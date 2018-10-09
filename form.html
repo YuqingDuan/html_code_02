@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 表单的作用是收集信息 -->
+	<form action="1.php" method="post">
+		<!-- 表单信息分组 -->
+		<fieldset>	
+		<!-- 分组名称 -->
+		<legend>group 1</legend>
+		<!-- username: <input name="username" type="text" maxlength="6" readonly="readonly"> --> 
+		<!-- 将 KEY = username; VALUE = Yuqing 传给1.php处理-->
+		username: <input name="username" value="Yuqing" type="text" maxlength="6" disabled="disabled">
+		<br>
+		<br>
+		password: <input name="password" maxlength="11" type="password"> 
+		<br>
+		<br>
+		gender:
+		<input type="radio" name="gender" checked="checked"> Male
+		<input type="radio" name="gender"> Female
+		<br>
+		<br>
+
+		<!-- 单选下拉列表 -->
+		city:
+		<select name="city" id="ci">
+			<option value="0062">Xi'an</option>
+			<option value="0072">Guangzhou</option>
+			<option value="0073" selected="selected">Beijing</option>
+			<option value="0098">Chengdu</option>
+		</select>
+		<br>
+		<br>
+		<!-- 多选下拉列表 -->
+		city:
+		<select name="city" id="ci" multiple="multiple">
+			<option value="0062" selected="selected">Xi'an</option>
+			<option value="0072">Guangzhou</option>
+			<option value="0073" selected="selected">Beijing</option>
+			<option value="0098">Chengdu</option>
+		</select>
+		<br>
+		<br>
+		<!-- <option value="	"></option>分组 -->
+		district:
+		<select name="district" id="dis">
+			<optgroup label="Beijing">	
+				<option>changping</option>
+				<option>chaoyang</option>
+				<option>haidian</option>
+				<option>daxing</option>
+			</optgroup>		
+			<optgroup label="Guangzhou">	
+				<option>changping</option>
+				<option>chaoyang</option>
+				<option>haidian</option>
+				<option>daxing</option>
+			</optgroup>			
+		</select>
+		<br>
+		<br>
+
+		<!-- 多选框 -->
+		<input type="checkbox">drink		
+		<input type="checkbox">smoke		
+		<input type="checkbox" checked="checked">game
+		<br>
+		<br>
+
+		<!-- 留言区 -->
+		comments: <br>	
+		<textarea name="comments" id="comm" cols="30" rows="10"></textarea>
+		<br>
+		<br>
+
+		<!-- 文件上传控件 -->
+		<input type="file">
+		<br>
+		<br>
+
+		<!-- 表单提交按钮 -->
+		<input type="submit">
+		<br>
+		<br>
+
+		<!-- 普通按钮, 不能提交信息, 配合Js使用 -->
+		<input type="button" value="Go">
+		<br>
+		<br>
+
+		<!-- 图片按钮, 能提交信息 -->
+		<input type="image" src="click.jpg">
+		<br>
+		<br>
+
+		<!-- 信息重置 -->
+		<input type="reset">
+
+		<!-- 其他控件 -->
+		<input type="date">
+		<br>
+		<br>
+		<input type="time">
+		<br>
+		<br>
+		<input type="email">
+		<br>
+		<br>
+		<input type="range">
+		</fieldset>
+	</form>
+</body>
+</html>

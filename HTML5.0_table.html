@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+</head>
+<body>
+	<!-- border边框的粗细, width表的宽度, height表的高度, cellspacing单元格之间的距离, cellpadding内容距便单元格的距离, align水平布局左中右, valign垂直布局上中下, bgcolor表格背景色, bordercolor边界颜色, colspan单元格列合并, rowspan单元格行合并-->
+	<!-- <caption></caption>是表格标题标签 -->
+	<table border="1" width="500" height="300" cellspacing="0" cellpadding="30" align="center" bgcolor="yellow" bordercolor="red"> <!-- 表 -->
+		<caption>这是表的标题标签</caption>
+		<tr> <!-- 行 -->
+			<!-- th标题标签(加粗+居中) -->
+			<th>wangwu</th> <!-- 列 -->
+			<th>25</th> <!-- 列 -->
+			<th>software developer</th> <!-- 列 -->
+		</tr>
+		<tr> <!-- 行 -->
+			<td align="center" colspan="2">zhangsan</td> <!-- 列 -->
+			<td>teacher</td> <!-- 列 -->
+		</tr>
+		<tr align="center"> <!-- 行 -->
+			<td>wangwu</td> <!-- 列 -->
+			<td>25</td> <!-- 列 -->
+			<td rowspan="2">software developer</td> <!-- 列 -->
+		</tr>
+		<tr> <!-- 行 -->
+			<td>maliu</td> <!-- 列 -->
+			<td>22</td> <!-- 列 -->
+		</tr>
+	</table>
+
+	<hr/>
+
+	<!-- table标签的标准结构 -->
+	<table border="2" width="500" height="300" cellspacing="0">
+		<thead>
+			<tr>
+				<th>zhangsan</th>
+				<th>22</th>
+				<th>miner</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td valign="top">zhangsan</td>
+				<td>22</td>
+				<td>miner</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>zhangsan</td>
+				<td>22</td>
+				<td>miner</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
